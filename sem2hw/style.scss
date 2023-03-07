@@ -900,6 +900,14 @@ details>summary {
         color: #636363;
     }
 
+    & a:not(:last-child)::after {
+        display: inline-block;
+        // margin: 0.2rem;
+        padding-left: 5px;
+        padding-right: 3px;
+        content: "/";
+    }
+
     &__title {
         font-weight: 400;
         font-size: 24px;
@@ -914,10 +922,11 @@ details>summary {
         color: #636363;
     }
 
-    &__menu-link-this {
+    &__menu-link:last-child {
         font-weight: 700;
         color: #F16D7F;
     }
+
 }
 
 /* ------------------ */
